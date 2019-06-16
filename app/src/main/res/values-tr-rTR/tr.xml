@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="title_activity_periodic_table">Periyodik Tablo</string>
+    <string name="title_activity_settings">Hakkında</string>
+
+    <string name="unknown">Bilinmiyor</string>
+
+    <string name="all">Tümü</string>
+    <string name="nonmetal">Ametal</string>
+    <string name="metal">Metal</string>
+    <string name="noble_gas">Soygaz</string>
+    <string name="metalloid">Yarı Metal</string>
+    <string name="halojen">Halojen</string>
+    <string name="transition_metals">Geçiş Metali</string>
+    <string name="lanthanoid">Lantinit</string>
+    <string name="actinoid">Aktinit</string>
+
+    <string name="symbol">Sembol:</string>
+    <string name="protonNumber">Proton Sayısı:</string>
+    <string name="type">Tür:</string>
+    <string name="mass">Kütle:</string>
+    <string name="electronCon">Elektron\nDizilimi:</string>
+    <string name="phase">Faz:</string>
+    <string name="position">Konum:</string>
+
+    <string name="gas">Gaz</string>
+    <string name="solid">Katı</string>
+    <string name="liquid">Sıvı</string>
+</resources>

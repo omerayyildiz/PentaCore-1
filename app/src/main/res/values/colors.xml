@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#242424</color>
+    <color name="colorPrimaryDark">#2b2b2b</color>
+    <color name="colorAccent">#ff4081</color>
+    <color name="colorAccentSecondary">#168AC7</color>
+    <color name="TRANSPARENT">#00000000</color>
+
+    <color name="actionBarTextColor">#fafafa</color>
+
+    <color name="light_background">#FAFAFA</color>
+    <color name="dark_background">#242424</color>
+    <color name="property_background">#80000000</color>
+    <color name="property_divider">#B1B1B1</color>
+
+    <color name="linkText">#001AFF</color>
+
+    <color name="color_table_divider">#000000</color>
+    <color name="light_text">#FAFAFA</color>
+    <color name="elementBackground_ametal"     >#46CECE</color>
+    <color name="elementBackground_metal"      >#C83B57</color>
+    <color name="elementBackground_gecismetal" >#B76FCE</color>
+    <color name="elementBackground_yarimetal"  >#F5618F</color>
+    <color name="elementBackground_halojen"    >#46CECE</color>
+    <color name="elementBackground_soygaz"     >#59AA31</color>
+    <color name="elementBackground_lanthanoids">#F4B410</color>
+    <color name="elementBackground_actinoids"  >#DC872E</color>
+    <color name="elementBakcground_unknown"    >#D3DBDC</color>
+
+    <color name="colorTabSelectedText">#ffffff</color>BD8AE6
+    <color name="colorTabText">#addedede</color>
+</resources>

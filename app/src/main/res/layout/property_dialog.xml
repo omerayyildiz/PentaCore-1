@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/propertyDialog_constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/property_layout_background">
+
+    <View
+        android:id="@+id/propertyBackgroundView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/property_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:gravity="center"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:text="Helyum"
+        android:textColor="@color/light_text"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/propertyBackgroundView" />
+
+    <ScrollView
+        android:id="@+id/propertyDialog_scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@id/propertyBackgroundView"
+        app:layout_constraintEnd_toEndOf="@id/propertyBackgroundView"
+        app:layout_constraintStart_toStartOf="@id/propertyBackgroundView"
+        app:layout_constraintTop_toBottomOf="@+id/propertyDialog_BottomDivider">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/property_symbol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/symbol"
+                android:textColor="@color/light_text"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/property_value_symbol"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="right"
+                android:text="He"
+                android:textColor="@color/light_text"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/property_symbol"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/property_symbol"
+                app:layout_constraintTop_toTopOf="@+id/property_symbol" />
+
+            <TextView
+                android:id="@+id/property_protonSayisi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="@string/protonNumber"
+                android:textColor="@color/light_text"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@+id/property_symbol"
+                app:layout_constraintTop_toBottomOf="@id/property_symbol" />
+
+            <TextView
+                android:id="@+id/property_value_protonsayisi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="right"
+                android:text="2"
+                android:textColor="@color/light_text"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/property_protonSayisi"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/property_protonSayisi"
+                app:layout_constraintTop_toTopOf="@+id/property_protonSayisi" />
+
+            <TextView
+                android:id="@+id/property_tur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="@string/type"
+                android:textColor="@color/light_text"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@+id/property_protonSayisi"
+                app:layout_constraintTop_toBottomOf="@+id/property_protonSayisi" />
+
+            <TextView
+                android:id="@+id/property_value_tur"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="right"
+                android:text="Soygaz"
+                android:textColor="@color/light_text"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/property_tur"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/property_tur"
+                app:layout_constraintTop_toTopOf="@+id/property_tur" />
+
+            <TextView
+                android:id="@+id/property_mass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="@string/mass"
+                android:textColor="@color/light_text"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@+id/property_tur"
+                app:layout_constraintTop_toBottomOf="@+id/property_tur" />
+
+            <TextView
+                android:id="@+id/property_value_mass"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="right"
+                android:text="4"
+                android:textColor="@color/light_text"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/property_mass"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/property_mass"
+                app:layout_constraintTop_toTopOf="@+id/property_mass" />
+
+            <TextView
+                android:id="@+id/property_eDizilimi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="@string/electronCon"
+                android:textColor="@color/light_text"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@+id/property_mass"
+                app:layout_constraintTop_toBottomOf="@+id/property_mass" />
+
+            <TextView
+                android:id="@+id/property_value_eDizilimi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="right"
+                android:text="s2"
+                android:textColor="@color/light_text"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/property_eDizilimi"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/property_eDizilimi"
+                app:layout_constraintTop_toTopOf="@+id/property_eDizilimi" />
+
+            <TextView
+                android:id="@+id/property_Faz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="@string/phase"
+                android:textColor="@color/light_text"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@+id/property_eDizilimi"
+                app:layout_constraintTop_toBottomOf="@+id/property_eDizilimi" />
+
+            <TextView
+                android:id="@+id/property_value_Faz"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="right|center_horizontal"
+                android:text="Gaz"
+                android:textColor="@color/light_text"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/property_Faz"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/property_Faz"
+                app:layout_constraintTop_toTopOf="@+id/property_Faz" />
+
+            <TextView
+                android:id="@+id/property_konum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="@string/position"
+                android:textColor="@color/light_text"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@+id/property_Faz"
+                app:layout_constraintTop_toBottomOf="@+id/property_Faz" />
+
+            <TextView
+                android:id="@+id/property_value_konum"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="right"
+                android:text="2/8A"
+                android:textColor="@color/light_text"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/property_konum"
+                app:layout_constraintTop_toTopOf="@+id/property_konum" />
+
+            <View
+                android:id="@+id/divider5"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/property_divider"
+                app:layout_constraintBottom_toTopOf="@+id/property_value_protonsayisi"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/property_value_symbol" />
+
+            <View
+                android:id="@+id/divider6"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/property_divider"
+                app:layout_constraintBottom_toTopOf="@+id/property_value_tur"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/property_value_protonsayisi" />
+
+            <View
+                android:id="@+id/divider7"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/property_divider"
+                app:layout_constraintBottom_toTopOf="@+id/property_value_mass"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/property_value_tur" />
+
+            <View
+                android:id="@+id/divider8"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/property_divider"
+                app:layout_constraintBottom_toTopOf="@+id/property_value_eDizilimi"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/property_value_mass" />
+
+            <View
+                android:id="@+id/divider9"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/property_divider"
+                app:layout_constraintBottom_toTopOf="@+id/property_value_Faz"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/property_value_eDizilimi" />
+
+            <View
+                android:id="@+id/divider10"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/property_divider"
+                app:layout_constraintBottom_toTopOf="@+id/property_value_konum"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/property_value_Faz" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+
+    <View
+        android:id="@+id/propertyDialog_BottomDivider"
+        android:layout_width="0dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="2dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="@+id/property_name"
+        app:layout_constraintStart_toStartOf="@+id/property_name"
+        app:layout_constraintTop_toBottomOf="@+id/property_name" />
+
+</android.support.constraint.ConstraintLayout>

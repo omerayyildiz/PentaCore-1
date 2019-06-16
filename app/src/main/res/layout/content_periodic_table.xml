@@ -1,0 +1,868 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_background"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".periodicTable.PeriodicTableActivity"
+    tools:showIn="@layout/activity_periodic_table">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/periodic_periodNumberLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" >
+
+                <TextView
+                    android:layout_width="16dp"
+                    android:layout_height="65dp"
+                    android:text="1"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:textColor="@color/light_text"/>
+
+                <TextView
+                    android:layout_width="16dp"
+                    android:layout_height="65dp"
+                    android:text="2"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:textColor="@color/light_text"/>
+
+                <TextView
+                    android:layout_width="16dp"
+                    android:layout_height="65dp"
+                    android:text="3"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:textColor="@color/light_text"/>
+
+                <TextView
+                    android:layout_width="16dp"
+                    android:layout_height="65dp"
+                    android:text="4"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:textColor="@color/light_text"/>
+
+                <TextView
+                    android:layout_width="16dp"
+                    android:layout_height="65dp"
+                    android:text="5"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:textColor="@color/light_text"/>
+
+                <TextView
+                    android:layout_width="16dp"
+                    android:layout_height="65dp"
+                    android:text="6"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:textColor="@color/light_text"/>
+
+                <TextView
+                    android:layout_width="16dp"
+                    android:layout_height="65dp"
+                    android:text="7"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:textColor="@color/light_text"/>
+
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/periodic_constraintOnScroll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible">
+
+                    <com.eksioglu.faruk.elementler.periodicTable.table_info_table
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="200dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="40dp"
+                        app:layout_constraintBottom_toBottomOf="@id/periodic_groupNumberLayout"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+
+                    </com.eksioglu.faruk.elementler.periodicTable.table_info_table>
+
+                    <LinearLayout
+                        android:id="@+id/periodic_groupNumberLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:layout_width="65dp"
+                            android:layout_height="16dp"
+                            android:layout_marginTop="0dp"
+                            android:gravity="center"
+                            android:text="1A"
+                            android:textSize="14dp"
+                            android:textColor="@color/light_text" />
+
+                        <TextView
+                            android:layout_width="65dp"
+                            android:layout_height="16dp"
+                            android:layout_marginTop="65dp"
+                            android:gravity="center"
+                            android:text="2A"
+                            android:textSize="14dp"
+                            android:textColor="@color/light_text" />
+
+                        <TextView
+                            android:layout_width="65dp"
+                            android:layout_height="16dp"
+                            android:layout_marginTop="195dp"
+                            android:gravity="center"
+                            android:text="3B"
+                            android:textSize="14dp"
+                            android:textColor="@color/light_text" />
+
+                        <TextView
+                            android:layout_width="65dp"
+                            android:layout_height="16dp"
+                            android:layout_marginTop="195dp"
+                            android:gravity="center"
+                            android:text="4B"
+                            android:textSize="14dp"
+                            android:textColor="@color/light_text" />
+
+                        <TextView
+                            android:layout_width="65dp"
+                            android:layout_height="16dp"
+                            android:layout_marginTop="195dp"
+                            android:gravity="center"
+                            android:text="5B"
+                            android:textSize="14dp"
+                            android:textColor="@color/light_text" />
+
+                        <TextView
+                            android:layout_width="65dp"
+                            android:layout_height="16dp"
+                            android:layout_marginTop="195dp"
+                            android:gravity="center"
+                            android:text="6B"
+                            android:textSize="14dp"
+                            android:textColor="@color/light_text" />
+
+                        <TextView
+                            android:layout_width="65dp"
+                            android:layout_height="16dp"
+                            android:layout_marginTop="195dp"
+                            android:gravity="center"
+                            android:text="7B"
+                            android:textSize="14dp"
+                            android:textColor="@color/light_text" />
+
+                        <LinearLayout
+                            android:layout_width="195dp"
+                            android:layout_height="25dp"
+                            android:layout_marginTop="186dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="16dp"
+                                android:gravity="center"
+                                android:text="8B"
+                                android:textSize="14dp"
+                                android:textColor="@color/light_text" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:layout_marginTop="4dp"
+                                android:background="@color/light_text" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="65dp"
+                            android:layout_height="16dp"
+                            android:layout_marginTop="195dp"
+                            android:gravity="center"
+                            android:text="1B"
+                            android:textSize="14dp"
+                            android:textColor="@color/light_text" />
+
+                        <TextView
+                            android:layout_width="65dp"
+                            android:layout_height="16dp"
+                            android:layout_marginTop="195dp"
+                            android:gravity="center"
+                            android:text="2B"
+                            android:textSize="14dp"
+                            android:textColor="@color/light_text" />
+
+                        <TextView
+                            android:layout_width="65dp"
+                            android:layout_height="16dp"
+                            android:layout_marginTop="65dp"
+                            android:gravity="center"
+                            android:text="3A"
+                            android:textSize="14dp"
+                            android:textColor="@color/light_text" />
+
+                        <TextView
+                            android:layout_width="65dp"
+                            android:layout_height="16dp"
+                            android:layout_marginTop="65dp"
+                            android:gravity="center"
+                            android:text="4A"
+                            android:textSize="14dp"
+                            android:textColor="@color/light_text" />
+
+                        <TextView
+                            android:layout_width="65dp"
+                            android:layout_height="16dp"
+                            android:layout_marginTop="65dp"
+                            android:gravity="center"
+                            android:text="5A"
+                            android:textSize="14dp"
+                            android:textColor="@color/light_text" />
+
+                        <TextView
+                            android:layout_width="65dp"
+                            android:layout_height="16dp"
+                            android:layout_marginTop="65dp"
+                            android:gravity="center"
+                            android:text="6A"
+                            android:textSize="14dp"
+                            android:textColor="@color/light_text" />
+
+                        <TextView
+                            android:layout_width="65dp"
+                            android:layout_height="16dp"
+                            android:layout_marginTop="65dp"
+                            android:gravity="center"
+                            android:text="7A"
+                            android:textSize="14dp"
+                            android:textColor="@color/light_text" />
+
+                        <TextView
+                            android:layout_width="65dp"
+                            android:layout_height="16dp"
+                            android:layout_marginTop="0dp"
+                            android:gravity="center"
+                            android:text="8A"
+                            android:textSize="14dp"
+                            android:textColor="@color/light_text" />
+
+
+                    </LinearLayout>
+
+                    <GridLayout
+                        android:id="@+id/periodic_icgecisGrid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:columnCount="15"
+                        android:layout_marginTop="65dp"
+                        android:layout_marginStart="196dp"
+                        app:layout_constraintTop_toBottomOf="@id/periodic_grid"
+                        app:layout_constraintStart_toStartOf="parent" >
+
+                    </GridLayout>
+
+                    <GridLayout
+                        android:id="@+id/periodic_grid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginStart="1dp"
+                        android:columnCount="18"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="457dp"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/color_table_divider" />
+
+                        <View
+                            android:layout_width="63dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/TRANSPARENT" />
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/color_table_divider" />
+
+                        <View
+                            android:layout_width="63dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/TRANSPARENT" />
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="65dp"
+                            android:background="@color/color_table_divider" />
+
+                        <View
+                            android:layout_width="63dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/TRANSPARENT" />
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="196dp"
+                            android:background="@color/color_table_divider" />
+
+                        <View
+                            android:layout_width="63dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/TRANSPARENT" />
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="196dp"
+                            android:background="@color/color_table_divider" />
+
+                        <View
+                            android:layout_width="63dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/TRANSPARENT" />
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="196dp"
+                            android:background="@color/color_table_divider" />
+
+                        <View
+                            android:layout_width="63dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/TRANSPARENT" />
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="196dp"
+                            android:background="@color/color_table_divider" />
+
+                        <View
+                            android:layout_width="63dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/TRANSPARENT" />
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="196dp"
+                            android:background="@color/color_table_divider" />
+
+                        <View
+                            android:layout_width="63dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/TRANSPARENT" />
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="196dp"
+                            android:background="@color/color_table_divider" />
+
+                        <View
+                            android:layout_width="63dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/TRANSPARENT" />
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="196dp"
+                            android:background="@color/color_table_divider" />
+
+                        <View
+                            android:layout_width="63dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/TRANSPARENT" />
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="196dp"
+                            android:background="@color/color_table_divider" />
+
+                        <View
+                            android:layout_width="63dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/TRANSPARENT" />
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="196dp"
+                            android:background="@color/color_table_divider" />
+
+                        <View
+                            android:layout_width="63dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/TRANSPARENT" />
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="65dp"
+                            android:background="@color/color_table_divider" />
+
+                        <View
+                            android:layout_width="63dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/TRANSPARENT" />
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="65dp"
+                            android:background="@color/color_table_divider" />
+
+                        <View
+                            android:layout_width="63dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/TRANSPARENT" />
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="65dp"
+                            android:background="@color/color_table_divider" />
+
+                        <View
+                            android:layout_width="63dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/TRANSPARENT" />
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="65dp"
+                            android:background="@color/color_table_divider" />
+
+                        <View
+                            android:layout_width="63dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/TRANSPARENT" />
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="65dp"
+                            android:background="@color/color_table_divider" />
+
+                        <View
+                            android:layout_width="63dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/TRANSPARENT" />
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/color_table_divider" />
+
+                        <View
+                            android:layout_width="63dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/TRANSPARENT" />
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/color_table_divider" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:orientation="vertical"
+                        app:layout_constraintEnd_toEndOf="@id/periodic_grid"
+                        app:layout_constraintStart_toStartOf="@id/periodic_grid"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="66dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/color_table_divider" />
+
+                            <View
+                                android:layout_width="1041dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/TRANSPARENT" />
+
+                            <View
+                                android:layout_width="66dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/color_table_divider" />
+                        </LinearLayout>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="63dp"
+                            android:background="@color/TRANSPARENT" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="130dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/color_table_divider" />
+
+                            <View
+                                android:layout_width="651dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/TRANSPARENT" />
+
+                            <View
+                                android:layout_width="391dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/color_table_divider" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="63dp"
+                            android:background="@color/TRANSPARENT" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="130dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/color_table_divider" />
+
+                            <View
+                                android:layout_width="651dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/TRANSPARENT" />
+
+                            <View
+                                android:layout_width="391dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/color_table_divider" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="63dp"
+                            android:background="@color/TRANSPARENT" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="@color/color_table_divider" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="63dp"
+                            android:background="@color/TRANSPARENT" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="@color/color_table_divider" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="63dp"
+                            android:background="@color/TRANSPARENT" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="@color/color_table_divider" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="63dp"
+                            android:background="@color/TRANSPARENT" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="@color/color_table_divider" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="63dp"
+                            android:background="@color/TRANSPARENT" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="@color/color_table_divider" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/periodic_icgecisLineVertical"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="@id/periodic_icgecisGrid"
+                        app:layout_constraintEnd_toEndOf="@id/periodic_icgecisGrid"
+                        app:layout_constraintStart_toStartOf="@id/periodic_icgecisGrid"
+                        app:layout_constraintTop_toTopOf="@id/periodic_icgecisGrid">
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/periodic_icgecisLineHorizontal"
+                        android:layout_width="977dp"
+                        android:layout_height="0dp"
+                        android:orientation="horizontal"
+                        app:layout_constraintBottom_toBottomOf="@id/periodic_icgecisGrid"
+                        app:layout_constraintEnd_toEndOf="@id/periodic_icgecisGrid"
+                        app:layout_constraintStart_toStartOf="@id/periodic_icgecisGrid"
+                        app:layout_constraintTop_toTopOf="@id/periodic_icgecisGrid">
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/color_table_divider"/>
+
+                        <View
+                            android:layout_width="63dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/TRANSPARENT"/>
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/color_table_divider"/>
+
+                        <View
+                            android:layout_width="63dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/TRANSPARENT"/>
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/color_table_divider"/>
+
+                        <View
+                            android:layout_width="63dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/TRANSPARENT"/>
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/color_table_divider"/>
+
+                        <View
+                            android:layout_width="63dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/TRANSPARENT"/>
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/color_table_divider"/>
+
+                        <View
+                            android:layout_width="63dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/TRANSPARENT"/>
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/color_table_divider"/>
+
+                        <View
+                            android:layout_width="63dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/TRANSPARENT"/>
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/color_table_divider"/>
+
+                        <View
+                            android:layout_width="63dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/TRANSPARENT"/>
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/color_table_divider"/>
+
+                        <View
+                            android:layout_width="63dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/TRANSPARENT"/>
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/color_table_divider"/>
+
+                        <View
+                            android:layout_width="63dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/TRANSPARENT"/>
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/color_table_divider"/>
+
+                        <View
+                            android:layout_width="63dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/TRANSPARENT"/>
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/color_table_divider"/>
+
+                        <View
+                            android:layout_width="63dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/TRANSPARENT"/>
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/color_table_divider"/>
+
+                        <View
+                            android:layout_width="63dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/TRANSPARENT"/>
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/color_table_divider"/>
+
+                        <View
+                            android:layout_width="63dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/TRANSPARENT"/>
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/color_table_divider"/>
+
+                        <View
+                            android:layout_width="63dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/TRANSPARENT"/>
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/color_table_divider"/>
+
+                        <View
+                            android:layout_width="63dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/TRANSPARENT"/>
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/color_table_divider"/>
+
+                        <View
+                            android:layout_width="63dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/TRANSPARENT"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="2dp"
+                        android:background="@color/color_table_divider"
+                        app:layout_constraintEnd_toEndOf="@id/periodic_icgecisGrid"
+                        app:layout_constraintStart_toStartOf="@id/periodic_icgecisGrid"
+                        app:layout_constraintTop_toTopOf="@id/periodic_icgecisGrid" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="2dp"
+                        android:background="@color/color_table_divider"
+                        app:layout_constraintBottom_toBottomOf="@id/periodic_icgecisGrid"
+                        app:layout_constraintEnd_toEndOf="@id/periodic_icgecisGrid"
+                        app:layout_constraintStart_toStartOf="@id/periodic_icgecisGrid"
+                        app:layout_constraintTop_toTopOf="@id/periodic_icgecisGrid" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="2dp"
+                        android:background="@color/color_table_divider"
+                        app:layout_constraintBottom_toBottomOf="@id/periodic_icgecisGrid"
+                        app:layout_constraintEnd_toEndOf="@id/periodic_icgecisGrid"
+                        app:layout_constraintStart_toStartOf="@id/periodic_icgecisGrid" />
+
+                </android.support.constraint.ConstraintLayout>
+            </HorizontalScrollView>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

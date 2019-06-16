@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name" translatable="false">PentaCore</string>
+    <string name="title_activity_periodic_table">Periodic Table</string>
+    <string name="title_activity_settings">About</string>
+    <string name="defaultValue" translatable="false">defaultValue</string>
+
+    <string name="all">All</string>
+    <string name="nonmetal">Nonmetal</string>
+    <string name="metal">Metal</string>
+    <string name="noble_gas">Noble gas</string>
+    <string name="metalloid">Metalloid</string>
+    <string name="halojen">Halojen</string>
+    <string name="transition_metals">Transition metal</string>
+    <string name="lanthanoid">Lanthanoid</string>
+    <string name="actinoid">Actinoid</string>
+    <string name="unknown">unknown</string>
+
+    <string name="symbol">Symbol:</string>
+    <string name="protonNumber">Proton Number:</string>
+    <string name="type">Type:</string>
+    <string name="mass">Mass:</string>
+    <string name="electronCon">Electron\nConfiguration:</string>
+    <string name="phase">Phase:</string>
+    <string name="position">Position:</string>
+
+
+    <string name="gas">Gas</string>
+    <string name="solid">Solid</string>
+    <string name="liquid">Liquid</string>
+
+
+    <string name="link0_aciklama">https://github.com/ubiko</string>
+    <string name="link_github" translatable="false">https://github.com/ubiko</string>
+
+    <string name="link1_aciklama">https://github.com/ubiko</string>
+    <string name="link_linkedin" translatable="false">https://linkedin.com/company/ubiko-inc</string>
+
+    <string name="link3_aciklama">https://github.com/ubiko</string>
+    <string name="link_web" translatable="false">https://ubikoteam.wordpress.com/</string>
+
+    <string name="link4_aciklama">https://github.com/ubiko</string>
+    <string name="link_discord" translatable="false">https://discord.gg/W5YauzD</string>
+
+    <string name="pentaCoreTanıtımıBaşlık_1" translatable="false">\nProjenin Amacı</string>
+    <string name="pentaCoreTanıtımı_1" translatable="false">
+        \n\ \ \ Periyodik cetvelde bulunan tüm elementlerin özelliklerinden oluşan bir veritabanı hazırlanır. Bu veri havuzunda bulunan elementlerin özellikleri kullanarak çeşitli karşılaştırmaları , mol ve benzeri kimyasal hesapları detaylı bir şekilde yapabilen makine öğrenimi destekli bir masaüstü yazılımın oluşturulması hedeflenmiştir. 16 Kasım 2018\' dan itibaren kararlaştırılacak olan yeni ölçü düzenlemeleri esas alınarak güncel bir sistem oluşturulup işlemler daha doğru şekilde yapılmış olacaktır. Elementler arasında orantılar kurarak kullanıcıya mol, gr gibi birçok ölçü biriminde kıyaslama yapmayı kolay hale getirecektir. Sadece işlem ile kalmayıp veritabanındaki bilgiler günlük yaşamda da kullanılabilir şekilde tasarlanmıştır. Eğitim , bilim ve sanayi gibi çok geniş bir kullanım alanı olan bu yazılım, güncel veritabanı ve yapay zeka ile hata payı sıfıra çekilmeye çalışılmıştır.
+    </string>
+    <string name="pentaCoreTanıtımıBaşlık_2" translatable="false">\nProjenin Özeti</string>
+    <string name="pentaCoreTanıtımı_2" translatable="false">
+        \n\ \ \ Projenin temeli atom özelliklerinin bulunduğu bir veritabanı ve tüm dünyaca kabul gören belirli ölçüm birimlerinin bulunduğu bir veritabanının aralarında etkileşim olmasını sağlayan bir bilgisayar yazılımıdır. Bu veritabanları kullanıcıya hem bilgi vermek amaçlı kullanılabilecek hem de atomlar ve moleküller arası birçok işlem ve karşılaştırma yapılabilecek şekilde tasarlanmıştır. Program oldukça kompleks bir yapıya sahip olmasına rağmen kullanıcı tarafı gayet basit ve kullanışlıdır. Makine öğrenmesi sayesinde program kendini kullanıcıya göre yeniden kendi içinde düzenleme yapabilecek ve daha çok geliştirebilecektir. Ruby dilinin esnekliği ve farklı platformlarla etkileşim kolaylığı sebebiyle yazılım web, sunucu ve gömülü sistemlere kolaylıkla entegre edilebilecektir. Kullanım alanı da bu sayede genişleyecektir. Bir eğitim kurumundan bir kimya araştırma merkezine kadar birçok yerde kullanılabilecektir.
+    </string>
+    <string name="ubikoTanıtımı" translatable="false">
+        \n\n
+        \ Temmuz 2018\'de kurulmuş olup, öncellikle ANNA Yapay Zekalı İşletim Sistemi üzerinde çalışan, ardından çeşitli yapay zeka temelli projeler üreten bir ekibiz.
+        \n\n
+        \ Yazılım, Tasarım, Araştırma, Mobil ve Satış gibi alanlarda tecrübeli çalışanlar barındıran ekibimiz, aramızda olan güçlü bağ ve samimiyet sayesinde en iyi işlere imza atabilecek güçte.
+        \n\n
+        \ Tek kuralımızın saygı, sevgi ve kararlılık olması nedeniyle herkes düşüncelerini en rahat bir şekilde paylaşarak, projeyi geliştirirken baştan sona eğlenceli ve zevkli bir hale getiriyoruz.
+        \n\n
+        \ Yapay zeka sistemlerinin çalışma prensiblerine yeni bir soluk getirecek ANNA AI OS projemiz hala gelişmekte olup, birçok sektöre aynı anda damga vuracağını düşünüyoruz. Bununla beraber Ruby ile geliştirdiğimiz TUBİTAK projesi olan PentaCore Chemical Calculator sayesinde ilk kapsamlı Ruby On Rails projesini oluşturmaya ve Kimya alanında yenilik getirmeye çalışıyoruz.
+        \n\n
+        \ Tasarıma oldukça önem veriyoruz ve yaptığımız çalışmaların çoğunu defalarca denetleyip en doğru kullanıcı deneyimini yakalamaya gayret gösteriyoruz.
+        \n\n
+        \ C, C++, C#, Ruby ve Java olmak üzere popüler ve güçlü dillerle sağlam iskeletler yazıp bunları projemize entegre ediyoruz.
+        \n\n
+        \ \"Bir grup gencin oluşturabileceği en kapsamlı IT ekibiyiz!\"
+    </string>
+
+</resources>

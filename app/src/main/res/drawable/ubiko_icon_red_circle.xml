@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <layer-list>
+            <item>
+                <shape android:shape="oval"  >
+                    <solid android:color="#ffffff" />
+                </shape>
+            </item>
+            <item>
+                <bitmap
+                    android:gravity="center"
+                    android:src="@drawable/ubiko_icon_red" />
+            </item>
+        </layer-list>
+    </item>
+</selector>
