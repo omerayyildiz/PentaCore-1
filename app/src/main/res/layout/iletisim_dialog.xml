@@ -6,8 +6,8 @@
     android:layout_height="wrap_content"
     android:background="@drawable/property_layout_background"
     app:midDot_padding="2dp"
-    app:divider_background_color="@color/light_text"
-    app:midDot_background_color="@color/light_text"
+    app:divider_background_color="@color/property_divider"
+    app:midDot_background_color="@color/property_divider"
     app:columnCount="2">
 
     <LinearLayout
@@ -67,7 +67,7 @@
             android:id="@+id/iletisimText_web"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Web Sitesi"
+            android:text="Web"
             android:textColor="@color/light_text" />
     </LinearLayout>
 
