@@ -1,17 +1,20 @@
 package com.eksioglu.faruk.elementler.periodicTable;
 
 import android.content.Context;
+import android.content.res.TypedArray;
 import android.graphics.Point;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.TypedValue;
 import android.view.Display;
 import android.view.View;
 import android.widget.GridLayout;
 import android.widget.LinearLayout;
 
+import com.eksioglu.faruk.divisiblegridlayout.DivisibleGridLayout;
 import com.eksioglu.faruk.elementler.R;
 import com.eksioglu.faruk.elementler.elements.propartyDialog.MyCustomDialog;
 
@@ -26,8 +29,8 @@ public class PeriodicTableActivity extends AppCompatActivity {
     Context context = this;
 
     ConstraintLayout constraintLayout;
-    GridLayout gridLayout, gridLayoutIcGecis;
-    LinearLayout groupNumberLayout, periodNumberLayout;
+    DivisibleGridLayout gridLayout, gridLayoutIcGecis;
+    DivisibleGridLayout groupNumberLayout, periodNumberLayout;
 
     MyCustomDialog dialog;
 
@@ -51,11 +54,10 @@ public class PeriodicTableActivity extends AppCompatActivity {
         weight = size.x;
         height = size.y;
 
-        gridLayout.setColumnCount(18);
+        groupNumberLayout.setViewsSize(groupNumberLayout.getChildViewAt(7), convertDpToPx(32),convertDpToPx(65)*3+convertDpToPx(4)*2+convertDpToPx(1));
 
         AsyncProcess asyncProcess = new AsyncProcess();
         asyncProcess.execute();
-
     }
 
     private void showPropertyDialog(int elementNumber){
@@ -123,5 +125,16 @@ public class PeriodicTableActivity extends AppCompatActivity {
             }
             constraintLayout.setVisibility(View.VISIBLE);
         }
+    }
+
+    private int convertDpToPx(int dp){
+        float px = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dp, getResources().getDisplayMetrics());
+        int _px;
+        if ((px*10)%10 < 5){
+            _px = (int)px;
+        }else {
+            _px = ((int)px) + 1;
+        }
+        return _px;
     }
 }

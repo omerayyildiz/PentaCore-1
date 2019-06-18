@@ -23,12 +23,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
-            <LinearLayout
+            <com.eksioglu.faruk.divisiblegridlayout.DivisibleGridLayout
                 android:id="@+id/periodic_periodNumberLayout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:orientation="vertical"
+                app:views_height="65dp"
+                app:views_width="16dp"
+                app:divider_weight="4dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" >
 
@@ -88,7 +90,7 @@
                     android:textSize="14dp"
                     android:textColor="@color/light_text"/>
 
-            </LinearLayout>
+            </com.eksioglu.faruk.divisiblegridlayout.DivisibleGridLayout>
 
             <HorizontalScrollView
                 android:layout_width="wrap_content"
@@ -114,11 +116,15 @@
 
                     </com.eksioglu.faruk.elementler.periodicTable.table_info_table>
 
-                    <LinearLayout
+                    <com.eksioglu.faruk.divisiblegridlayout.DivisibleGridLayout
                         android:id="@+id/periodic_groupNumberLayout"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
+                        app:views_height="16dp"
+                        app:views_width="65dp"
+                        app:divider_weight="4dp"
+                        app:columnCount="16"
+                        app:divider_background_color="@color/TRANSPARENT"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent">
 
@@ -280,582 +286,41 @@
                             android:textColor="@color/light_text" />
 
 
-                    </LinearLayout>
+                    </com.eksioglu.faruk.divisiblegridlayout.DivisibleGridLayout>
 
-                    <GridLayout
+                    <com.eksioglu.faruk.divisiblegridlayout.DivisibleGridLayout
                         android:id="@+id/periodic_icgecisGrid"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:columnCount="15"
                         android:layout_marginTop="65dp"
                         android:layout_marginStart="196dp"
+                        app:divider_background_color="@color/TRANSPARENT"
+                        app:midDot_background_color="@color/TRANSPARENT"
+                        app:divider_padding="0dp"
+                        app:midDot_padding="0dp"
+                        app:views_height="65dp"
+                        app:views_width="65dp"
+                        app:divider_weight="4dp"
+                        app:columnCount="15"
                         app:layout_constraintTop_toBottomOf="@id/periodic_grid"
-                        app:layout_constraintStart_toStartOf="parent" >
+                        app:layout_constraintStart_toStartOf="parent" />
 
-                    </GridLayout>
-
-                    <GridLayout
+                    <com.eksioglu.faruk.divisiblegridlayout.DivisibleGridLayout
                         android:id="@+id/periodic_grid"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="16dp"
                         android:layout_marginStart="1dp"
-                        android:columnCount="18"
+                        app:divider_background_color="@color/TRANSPARENT"
+                        app:midDot_background_color="@color/TRANSPARENT"
+                        app:divider_padding="0dp"
+                        app:midDot_padding="0dp"
+                        app:views_height="65dp"
+                        app:views_width="65dp"
+                        app:divider_weight="4dp"
+                        app:columnCount="18"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="457dp"
-                        android:layout_marginTop="15dp"
-                        android:orientation="horizontal"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent">
-
-                        <View
-                            android:layout_width="2dp"
-                            android:layout_height="match_parent"
-                            android:background="@color/color_table_divider" />
-
-                        <View
-                            android:layout_width="63dp"
-                            android:layout_height="match_parent"
-                            android:background="@color/TRANSPARENT" />
-
-                        <View
-                            android:layout_width="2dp"
-                            android:layout_height="match_parent"
-                            android:background="@color/color_table_divider" />
-
-                        <View
-                            android:layout_width="63dp"
-                            android:layout_height="match_parent"
-                            android:background="@color/TRANSPARENT" />
-
-                        <View
-                            android:layout_width="2dp"
-                            android:layout_height="match_parent"
-                            android:layout_marginTop="65dp"
-                            android:background="@color/color_table_divider" />
-
-                        <View
-                            android:layout_width="63dp"
-                            android:layout_height="match_parent"
-                            android:background="@color/TRANSPARENT" />
-
-                        <View
-                            android:layout_width="2dp"
-                            android:layout_height="match_parent"
-                            android:layout_marginTop="196dp"
-                            android:background="@color/color_table_divider" />
-
-                        <View
-                            android:layout_width="63dp"
-                            android:layout_height="match_parent"
-                            android:background="@color/TRANSPARENT" />
-
-                        <View
-                            android:layout_width="2dp"
-                            android:layout_height="match_parent"
-                            android:layout_marginTop="196dp"
-                            android:background="@color/color_table_divider" />
-
-                        <View
-                            android:layout_width="63dp"
-                            android:layout_height="match_parent"
-                            android:background="@color/TRANSPARENT" />
-
-                        <View
-                            android:layout_width="2dp"
-                            android:layout_height="match_parent"
-                            android:layout_marginTop="196dp"
-                            android:background="@color/color_table_divider" />
-
-                        <View
-                            android:layout_width="63dp"
-                            android:layout_height="match_parent"
-                            android:background="@color/TRANSPARENT" />
-
-                        <View
-                            android:layout_width="2dp"
-                            android:layout_height="match_parent"
-                            android:layout_marginTop="196dp"
-                            android:background="@color/color_table_divider" />
-
-                        <View
-                            android:layout_width="63dp"
-                            android:layout_height="match_parent"
-                            android:background="@color/TRANSPARENT" />
-
-                        <View
-                            android:layout_width="2dp"
-                            android:layout_height="match_parent"
-                            android:layout_marginTop="196dp"
-                            android:background="@color/color_table_divider" />
-
-                        <View
-                            android:layout_width="63dp"
-                            android:layout_height="match_parent"
-                            android:background="@color/TRANSPARENT" />
-
-                        <View
-                            android:layout_width="2dp"
-                            android:layout_height="match_parent"
-                            android:layout_marginTop="196dp"
-                            android:background="@color/color_table_divider" />
-
-                        <View
-                            android:layout_width="63dp"
-                            android:layout_height="match_parent"
-                            android:background="@color/TRANSPARENT" />
-
-                        <View
-                            android:layout_width="2dp"
-                            android:layout_height="match_parent"
-                            android:layout_marginTop="196dp"
-                            android:background="@color/color_table_divider" />
-
-                        <View
-                            android:layout_width="63dp"
-                            android:layout_height="match_parent"
-                            android:background="@color/TRANSPARENT" />
-
-                        <View
-                            android:layout_width="2dp"
-                            android:layout_height="match_parent"
-                            android:layout_marginTop="196dp"
-                            android:background="@color/color_table_divider" />
-
-                        <View
-                            android:layout_width="63dp"
-                            android:layout_height="match_parent"
-                            android:background="@color/TRANSPARENT" />
-
-                        <View
-                            android:layout_width="2dp"
-                            android:layout_height="match_parent"
-                            android:layout_marginTop="196dp"
-                            android:background="@color/color_table_divider" />
-
-                        <View
-                            android:layout_width="63dp"
-                            android:layout_height="match_parent"
-                            android:background="@color/TRANSPARENT" />
-
-                        <View
-                            android:layout_width="2dp"
-                            android:layout_height="match_parent"
-                            android:layout_marginTop="65dp"
-                            android:background="@color/color_table_divider" />
-
-                        <View
-                            android:layout_width="63dp"
-                            android:layout_height="match_parent"
-                            android:background="@color/TRANSPARENT" />
-
-                        <View
-                            android:layout_width="2dp"
-                            android:layout_height="match_parent"
-                            android:layout_marginTop="65dp"
-                            android:background="@color/color_table_divider" />
-
-                        <View
-                            android:layout_width="63dp"
-                            android:layout_height="match_parent"
-                            android:background="@color/TRANSPARENT" />
-
-                        <View
-                            android:layout_width="2dp"
-                            android:layout_height="match_parent"
-                            android:layout_marginTop="65dp"
-                            android:background="@color/color_table_divider" />
-
-                        <View
-                            android:layout_width="63dp"
-                            android:layout_height="match_parent"
-                            android:background="@color/TRANSPARENT" />
-
-                        <View
-                            android:layout_width="2dp"
-                            android:layout_height="match_parent"
-                            android:layout_marginTop="65dp"
-                            android:background="@color/color_table_divider" />
-
-                        <View
-                            android:layout_width="63dp"
-                            android:layout_height="match_parent"
-                            android:background="@color/TRANSPARENT" />
-
-                        <View
-                            android:layout_width="2dp"
-                            android:layout_height="match_parent"
-                            android:layout_marginTop="65dp"
-                            android:background="@color/color_table_divider" />
-
-                        <View
-                            android:layout_width="63dp"
-                            android:layout_height="match_parent"
-                            android:background="@color/TRANSPARENT" />
-
-                        <View
-                            android:layout_width="2dp"
-                            android:layout_height="match_parent"
-                            android:background="@color/color_table_divider" />
-
-                        <View
-                            android:layout_width="63dp"
-                            android:layout_height="match_parent"
-                            android:background="@color/TRANSPARENT" />
-
-                        <View
-                            android:layout_width="2dp"
-                            android:layout_height="match_parent"
-                            android:background="@color/color_table_divider" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="15dp"
-                        android:orientation="vertical"
-                        app:layout_constraintEnd_toEndOf="@id/periodic_grid"
-                        app:layout_constraintStart_toStartOf="@id/periodic_grid"
-                        app:layout_constraintTop_toTopOf="parent">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="2dp"
-                            android:orientation="horizontal">
-
-                            <View
-                                android:layout_width="66dp"
-                                android:layout_height="match_parent"
-                                android:background="@color/color_table_divider" />
-
-                            <View
-                                android:layout_width="1041dp"
-                                android:layout_height="match_parent"
-                                android:background="@color/TRANSPARENT" />
-
-                            <View
-                                android:layout_width="66dp"
-                                android:layout_height="match_parent"
-                                android:background="@color/color_table_divider" />
-                        </LinearLayout>
-
-
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="63dp"
-                            android:background="@color/TRANSPARENT" />
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="2dp"
-                            android:orientation="horizontal">
-
-                            <View
-                                android:layout_width="130dp"
-                                android:layout_height="match_parent"
-                                android:background="@color/color_table_divider" />
-
-                            <View
-                                android:layout_width="651dp"
-                                android:layout_height="match_parent"
-                                android:background="@color/TRANSPARENT" />
-
-                            <View
-                                android:layout_width="391dp"
-                                android:layout_height="match_parent"
-                                android:background="@color/color_table_divider" />
-                        </LinearLayout>
-
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="63dp"
-                            android:background="@color/TRANSPARENT" />
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="2dp"
-                            android:orientation="horizontal">
-
-                            <View
-                                android:layout_width="130dp"
-                                android:layout_height="match_parent"
-                                android:background="@color/color_table_divider" />
-
-                            <View
-                                android:layout_width="651dp"
-                                android:layout_height="match_parent"
-                                android:background="@color/TRANSPARENT" />
-
-                            <View
-                                android:layout_width="391dp"
-                                android:layout_height="match_parent"
-                                android:background="@color/color_table_divider" />
-                        </LinearLayout>
-
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="63dp"
-                            android:background="@color/TRANSPARENT" />
-
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="2dp"
-                            android:background="@color/color_table_divider" />
-
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="63dp"
-                            android:background="@color/TRANSPARENT" />
-
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="2dp"
-                            android:background="@color/color_table_divider" />
-
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="63dp"
-                            android:background="@color/TRANSPARENT" />
-
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="2dp"
-                            android:background="@color/color_table_divider" />
-
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="63dp"
-                            android:background="@color/TRANSPARENT" />
-
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="2dp"
-                            android:background="@color/color_table_divider" />
-
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="63dp"
-                            android:background="@color/TRANSPARENT" />
-
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="2dp"
-                            android:background="@color/color_table_divider" />
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:id="@+id/periodic_icgecisLineVertical"
-                        android:layout_width="0dp"
-                        android:layout_height="0dp"
-                        android:orientation="vertical"
-                        app:layout_constraintBottom_toBottomOf="@id/periodic_icgecisGrid"
-                        app:layout_constraintEnd_toEndOf="@id/periodic_icgecisGrid"
-                        app:layout_constraintStart_toStartOf="@id/periodic_icgecisGrid"
-                        app:layout_constraintTop_toTopOf="@id/periodic_icgecisGrid">
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:id="@+id/periodic_icgecisLineHorizontal"
-                        android:layout_width="977dp"
-                        android:layout_height="0dp"
-                        android:orientation="horizontal"
-                        app:layout_constraintBottom_toBottomOf="@id/periodic_icgecisGrid"
-                        app:layout_constraintEnd_toEndOf="@id/periodic_icgecisGrid"
-                        app:layout_constraintStart_toStartOf="@id/periodic_icgecisGrid"
-                        app:layout_constraintTop_toTopOf="@id/periodic_icgecisGrid">
-
-                        <View
-                            android:layout_width="2dp"
-                            android:layout_height="match_parent"
-                            android:background="@color/color_table_divider"/>
-
-                        <View
-                            android:layout_width="63dp"
-                            android:layout_height="match_parent"
-                            android:background="@color/TRANSPARENT"/>
-
-                        <View
-                            android:layout_width="2dp"
-                            android:layout_height="match_parent"
-                            android:background="@color/color_table_divider"/>
-
-                        <View
-                            android:layout_width="63dp"
-                            android:layout_height="match_parent"
-                            android:background="@color/TRANSPARENT"/>
-
-                        <View
-                            android:layout_width="2dp"
-                            android:layout_height="match_parent"
-                            android:background="@color/color_table_divider"/>
-
-                        <View
-                            android:layout_width="63dp"
-                            android:layout_height="match_parent"
-                            android:background="@color/TRANSPARENT"/>
-
-                        <View
-                            android:layout_width="2dp"
-                            android:layout_height="match_parent"
-                            android:background="@color/color_table_divider"/>
-
-                        <View
-                            android:layout_width="63dp"
-                            android:layout_height="match_parent"
-                            android:background="@color/TRANSPARENT"/>
-
-                        <View
-                            android:layout_width="2dp"
-                            android:layout_height="match_parent"
-                            android:background="@color/color_table_divider"/>
-
-                        <View
-                            android:layout_width="63dp"
-                            android:layout_height="match_parent"
-                            android:background="@color/TRANSPARENT"/>
-
-                        <View
-                            android:layout_width="2dp"
-                            android:layout_height="match_parent"
-                            android:background="@color/color_table_divider"/>
-
-                        <View
-                            android:layout_width="63dp"
-                            android:layout_height="match_parent"
-                            android:background="@color/TRANSPARENT"/>
-
-                        <View
-                            android:layout_width="2dp"
-                            android:layout_height="match_parent"
-                            android:background="@color/color_table_divider"/>
-
-                        <View
-                            android:layout_width="63dp"
-                            android:layout_height="match_parent"
-                            android:background="@color/TRANSPARENT"/>
-
-                        <View
-                            android:layout_width="2dp"
-                            android:layout_height="match_parent"
-                            android:background="@color/color_table_divider"/>
-
-                        <View
-                            android:layout_width="63dp"
-                            android:layout_height="match_parent"
-                            android:background="@color/TRANSPARENT"/>
-
-                        <View
-                            android:layout_width="2dp"
-                            android:layout_height="match_parent"
-                            android:background="@color/color_table_divider"/>
-
-                        <View
-                            android:layout_width="63dp"
-                            android:layout_height="match_parent"
-                            android:background="@color/TRANSPARENT"/>
-
-                        <View
-                            android:layout_width="2dp"
-                            android:layout_height="match_parent"
-                            android:background="@color/color_table_divider"/>
-
-                        <View
-                            android:layout_width="63dp"
-                            android:layout_height="match_parent"
-                            android:background="@color/TRANSPARENT"/>
-
-                        <View
-                            android:layout_width="2dp"
-                            android:layout_height="match_parent"
-                            android:background="@color/color_table_divider"/>
-
-                        <View
-                            android:layout_width="63dp"
-                            android:layout_height="match_parent"
-                            android:background="@color/TRANSPARENT"/>
-
-                        <View
-                            android:layout_width="2dp"
-                            android:layout_height="match_parent"
-                            android:background="@color/color_table_divider"/>
-
-                        <View
-                            android:layout_width="63dp"
-                            android:layout_height="match_parent"
-                            android:background="@color/TRANSPARENT"/>
-
-                        <View
-                            android:layout_width="2dp"
-                            android:layout_height="match_parent"
-                            android:background="@color/color_table_divider"/>
-
-                        <View
-                            android:layout_width="63dp"
-                            android:layout_height="match_parent"
-                            android:background="@color/TRANSPARENT"/>
-
-                        <View
-                            android:layout_width="2dp"
-                            android:layout_height="match_parent"
-                            android:background="@color/color_table_divider"/>
-
-                        <View
-                            android:layout_width="63dp"
-                            android:layout_height="match_parent"
-                            android:background="@color/TRANSPARENT"/>
-
-                        <View
-                            android:layout_width="2dp"
-                            android:layout_height="match_parent"
-                            android:background="@color/color_table_divider"/>
-
-                        <View
-                            android:layout_width="63dp"
-                            android:layout_height="match_parent"
-                            android:background="@color/TRANSPARENT"/>
-
-                        <View
-                            android:layout_width="2dp"
-                            android:layout_height="match_parent"
-                            android:background="@color/color_table_divider"/>
-
-                        <View
-                            android:layout_width="63dp"
-                            android:layout_height="match_parent"
-                            android:background="@color/TRANSPARENT"/>
-
-                    </LinearLayout>
-
-                    <View
-                        android:layout_width="0dp"
-                        android:layout_height="2dp"
-                        android:background="@color/color_table_divider"
-                        app:layout_constraintEnd_toEndOf="@id/periodic_icgecisGrid"
-                        app:layout_constraintStart_toStartOf="@id/periodic_icgecisGrid"
-                        app:layout_constraintTop_toTopOf="@id/periodic_icgecisGrid" />
-
-                    <View
-                        android:layout_width="0dp"
-                        android:layout_height="2dp"
-                        android:background="@color/color_table_divider"
-                        app:layout_constraintBottom_toBottomOf="@id/periodic_icgecisGrid"
-                        app:layout_constraintEnd_toEndOf="@id/periodic_icgecisGrid"
-                        app:layout_constraintStart_toStartOf="@id/periodic_icgecisGrid"
-                        app:layout_constraintTop_toTopOf="@id/periodic_icgecisGrid" />
-
-                    <View
-                        android:layout_width="0dp"
-                        android:layout_height="2dp"
-                        android:background="@color/color_table_divider"
-                        app:layout_constraintBottom_toBottomOf="@id/periodic_icgecisGrid"
-                        app:layout_constraintEnd_toEndOf="@id/periodic_icgecisGrid"
-                        app:layout_constraintStart_toStartOf="@id/periodic_icgecisGrid" />
 
                 </android.support.constraint.ConstraintLayout>
             </HorizontalScrollView>
