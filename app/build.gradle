@@ -6,8 +6,8 @@ android {
         applicationId "com.eksioglu.faruk.elementler"
         minSdkVersion 17
         targetSdkVersion 28
-        versionCode 20
-        versionName "0.54"
+        versionCode 21
+        versionName "0.60"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
