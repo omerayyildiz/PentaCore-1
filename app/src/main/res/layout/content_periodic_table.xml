@@ -293,7 +293,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="65dp"
-                        android:layout_marginStart="196dp"
+                        android:layout_marginStart="207dp"
                         app:divider_background_color="@color/TRANSPARENT"
                         app:midDot_background_color="@color/TRANSPARENT"
                         app:divider_padding="0dp"
